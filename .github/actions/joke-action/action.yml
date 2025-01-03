@@ -2,6 +2,12 @@ name: "my joke action"
 
 description: "use an external API to retrieve and display a joke"
 
+inputs:
+  number-of-jokes:
+    description: The number of jokes to return (default 1)
+    required: false
+    default: '1'
+
 outputs:
   joke-output:
     description: The resulting joke from the icanhazdadjokes API
